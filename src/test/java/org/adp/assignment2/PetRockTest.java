@@ -15,9 +15,14 @@ public class PetRockTest
 
     private PetRock rocky = new PetRock("Rocky");
     @Test
-    public void getName() throws Exception
+    public void testGetName() throws Exception
     {
         assertEquals("Rocky", rocky.getName());
+    }
+
+    @Test
+    public void testFailGetName() throws Exception {
+        assertEquals("Potato",rocky.getName());
     }
 
     @Test
